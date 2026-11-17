@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#122b2b">
+  <meta name="description" content="Feed Nest turns customer feedback into clear topics, sentiment, trends, and business insights.">
+  <title>Feed Nest — Feedback intelligence</title>
+  <link rel="icon" href="/static/assets/feednest-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <script src="/static/js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="/" aria-label="Feed Nest home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M20 5.5c-7.9 0-14.3 6.4-14.3 14.3S12.1 34.1 20 34.1s14.3-6.4 14.3-14.3S27.9 5.5 20 5.5Z" stroke="currentColor" stroke-width="2.2"/>
+            <path d="M12.1 18.7c3.1-5.1 12.7-5.1 15.8 0M12.1 23.1c3.1 5.1 12.7 5.1 15.8 0M20 9.2v21.6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="20" cy="20.9" r="3.1" fill="#c7f27c"/>
+          </svg>
+        </span>
+        <span class="brand-copy"><strong>feed nest</strong><small>FEEDBACK INTELLIGENCE</small></span>
+      </a>
+
+      <div class="sidebar-section-label">WORKSPACE</div>
+      <nav class="primary-nav">
+        <button class="nav-link is-active" type="button" data-view="dashboard" aria-current="page">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.7"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.7"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.7"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.7"/></svg>
+          <span>Overview</span>
+        </button>
+        <button class="nav-link" type="button" data-view="history">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5h16M4 12h16M4 16.5h10"/><circle cx="18" cy="17" r="3"/></svg>
+          <span>Analysis history</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-spacer"></div>
+      <div class="sidebar-note">
+        <span class="sidebar-note-icon" aria-hidden="true">✳</span>
+        <div><strong>Make feedback useful.</strong><p>Find the patterns behind every customer voice.</p></div>
+      </div>
+      <div class="sidebar-footer"><span class="status-dot"></span> LOCAL WORKSPACE <span class="sidebar-version">v1.0</span></div>
+    </aside>
+
+    <main class="main-content" id="main-content">
+      <header class="topbar">
+        <div class="topbar-context">
+          <span class="topbar-overline">FEED NEST</span>
+          <span class="topbar-divider">/</span>
+          <span id="topbar-view-label">Overview</span>
+        </div>
+        <div class="topbar-actions">
+          <span class="api-indicator" id="api-status"><span class="status-dot"></span><span>Connecting to API</span></span>
+          <button class="button button-primary button-small" id="top-upload-button" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M4 15.5v3A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5v-3"/></svg>
+            New analysis
+          </button>
+        </div>
+      </header>
+
+      <section class="view-section" id="dashboard-view" aria-labelledby="page-title">
+        <div class="intro-grid" id="intro-panel">
+          <div class="intro-copy">
+            <div class="eyebrow"><span class="eyebrow-line"></span> CUSTOMER FEEDBACK, MADE CLEAR</div>
+            <h1 id="page-title">Turn customer voices into <span>clear direction.</span></h1>
+            <p class="intro-description">Bring reviews and feedback together. Discover what customers talk about, how they feel, and what deserves your attention next.</p>
+            <div class="intro-actions">
+              <button class="button button-primary" id="hero-upload-button" type="button">Analyze feedback <span aria-hidden="true">↗</span></button>
+              <span class="intro-caption"><span class="tiny-sparkle" aria-hidden="true">✳</span> Your data stays in your workspace.</span>
+            </div>
+          </div>
+          <div class="visual-card" aria-label="Illustration of customer feedback becoming insights">
+            <div class="visual-card-top"><span>FEEDBACK SIGNAL</span><span class="visual-live"><i></i> READY TO ANALYZE</span></div>
+            <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+            <div class="visual-center-mark"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 5.5c-10.2 0-18.5 8.3-18.5 18.5S13.8 42.5 24 42.5 42.5 34.2 42.5 24 34.2 5.5 24 5.5Z" stroke="currentColor" stroke-width="2"/><path d="M13 22c4.3-6.4 17.7-6.4 22 0M13 26c4.3 6.4 17.7 6.4 22 0M24 10v28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="24" r="4" fill="#c7f27c"/></svg></div>
+            <span class="orbit-tag tag-topic">TOPICS</span><span class="orbit-tag tag-sentiment">SENTIMENT</span><span class="orbit-tag tag-trends">TRENDS</span>
+            <div class="visual-card-bottom"><span>Raw feedback</span><span class="visual-arrow">→</span><strong>Useful insight</strong></div>
+          </div>
+        </div>
+
+        <section class="upload-panel" id="upload-panel" aria-labelledby="upload-heading">
+          <div class="section-heading-row">
+            <div><div class="eyebrow eyebrow-compact">GET STARTED</div><h2 id="upload-heading">Bring your feedback in</h2><p class="section-subtitle">Start with a CSV file. We'll help you match its columns before analysis.</p></div>
+            <span class="file-format-pill"><span class="file-format-icon">CSV</span> CSV files</span>
+          </div>
+          <label class="dropzone" id="dropzone" for="csv-file-input">
+            <input id="csv-file-input" type="file" accept=".csv,text/csv" aria-describedby="file-help">
+            <span class="upload-icon-wrap" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 15.5V4m0 0L7.5 8.5M12 4l4.5 4.5M4 15.5v3A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5v-3"/></svg></span>
+            <span class="dropzone-title">Drop your CSV here, or <u>browse files</u></span>
+            <span class="dropzone-help" id="file-help">CSV format · Up to 20 MB · A feedback text column is required</span>
+          </label>
+          <div class="selected-file-row" id="selected-file-row" hidden>
+            <div class="selected-file-icon">CSV</div><div class="selected-file-copy"><strong id="selected-file-name">feedback.csv</strong><span id="selected-file-meta">Ready to map columns</span></div><button type="button" class="icon-button" id="remove-file-button" aria-label="Remove selected file">×</button>
+          </div>
+
+          <div class="mapping-panel" id="mapping-panel" hidden>
+            <div class="mapping-heading"><div><h3>Match your CSV columns</h3><p>Tell Feed Nest what each column represents.</p></div><span class="step-chip">STEP 1 OF 2</span></div>
+            <div class="mapping-grid">
+              <div class="field-group"><label for="map-review">Feedback text <span class="required-mark">Required</span></label><select id="map-review" required><option value="">Choose a column</option></select><small>The words your customers wrote.</small></div>
+              <div class="field-group"><label for="map-rating">Rating <span class="optional-mark">Optional</span></label><select id="map-rating"><option value="">Not available</option></select><small>For example, a 1–5 star rating.</small></div>
+              <div class="field-group"><label for="map-date">Date <span class="optional-mark">Optional</span></label><select id="map-date"><option value="">Not available</option></select><small>When the feedback was submitted.</small></div>
+              <div class="field-group"><label for="map-product">Product <span class="optional-mark">Optional</span></label><select id="map-product"><option value="">Not available</option></select><small>Product, service, or item name.</small></div>
+              <div class="field-group"><label for="map-source">Source <span class="optional-mark">Optional</span></label><select id="map-source"><option value="">Not available</option></select><small>For example, a store or platform.</small></div>
+            </div>
+            <div class="mapping-footer"><span id="mapping-message" role="status">Choose the feedback text column to continue.</span><button class="button button-primary" id="analyze-button" type="button" disabled>Run analysis <span aria-hidden="true">→</span></button></div>
+          </div>
+          <div class="analysis-progress" id="analysis-progress" hidden aria-live="polite">
+            <div class="loader-ring"></div><div><strong id="progress-title">Analyzing your feedback</strong><p id="progress-description">Discovering topics and interpreting sentiment. This can take a little while on CPU.</p></div>
+          </div>
+        </section>
+
+        <div class="trust-strip"><div><span class="trust-icon">⌁</span><span><strong>Topic discovery</strong><small>Let feedback reveal its themes</small></span></div><div><span class="trust-icon trust-icon-mint">◒</span><span><strong>Sentiment analysis</strong><small>Understand customer feeling</small></span></div><div><span class="trust-icon trust-icon-lilac">↗</span><span><strong>Business insights</strong><small>Focus on what needs attention</small></span></div></div>
+        <section class="results-section" id="results-section" hidden aria-labelledby="results-title">
+          <div class="results-heading"><div><div class="eyebrow eyebrow-compact">YOUR FEEDBACK OVERVIEW</div><h2 id="results-title">Here's what your customers are saying</h2><p class="section-subtitle" id="results-meta">Analysis results</p></div><div class="results-actions"><button class="button button-secondary" id="export-button" type="button">↓ Export CSV</button><button class="button button-primary" id="results-new-analysis" type="button">New analysis <span aria-hidden="true">+</span></button></div></div>
+          <div class="metric-grid" id="metric-grid"></div>
+          <div class="dashboard-grid dashboard-grid-top">
+            <section class="content-card sentiment-card"><div class="card-heading"><div><span class="card-kicker">CUSTOMER MOOD</span><h3>Sentiment distribution</h3></div><span class="card-icon card-icon-mint">◒</span></div><div class="sentiment-content" id="sentiment-content"></div></section>
+            <section class="content-card recommendations-card"><div class="card-heading"><div><span class="card-kicker">WHAT NEEDS ATTENTION</span><h3>Recommended focus</h3></div><span class="card-icon card-icon-lime">✳</span></div><div id="recommendations-list" class="recommendations-list"></div></section>
+          </div>
+          <section class="content-card topic-card"><div class="card-heading"><div><span class="card-kicker">DISCOVERED THEMES</span><h3>Topic landscape</h3><p class="card-description">Topics are discovered from the feedback, not selected from a fixed category list.</p></div><span class="table-count" id="topic-count">0 topics</span></div><div class="table-wrap"><table><thead><tr><th>Topic</th><th>Reviews</th><th>Negative feedback</th><th>Signal</th></tr></thead><tbody id="topic-table-body"><tr><td colspan="4" class="table-empty">Run an analysis to discover topics.</td></tr></tbody></table></div></section>
+          <div class="dashboard-grid dashboard-grid-bottom">
+            <section class="content-card trend-card"><div class="card-heading"><div><span class="card-kicker">CHANGE OVER TIME</span><h3>Topic volume trends</h3></div><span class="card-icon card-icon-lilac">↗</span></div><div id="topic-trends-list" class="trend-list"></div></section>
+            <section class="content-card emerging-card"><div class="card-heading"><div><span class="card-kicker">NEW SIGNALS</span><h3>Emerging topics</h3></div><span class="card-icon card-icon-peach">✦</span></div><div id="emerging-list" class="emerging-list"></div></section>
+          </div>
+          <section class="content-card feedback-card"><div class="card-heading"><div><span class="card-kicker">VOICE OF THE CUSTOMER</span><h3>Analyzed feedback</h3><p class="card-description">A sample of the original feedback alongside its predicted sentiment and discovered topic.</p></div><span class="table-count" id="feedback-count">0 reviews</span></div><div class="table-wrap"><table><thead><tr><th>Customer feedback</th><th>Topic</th><th>Sentiment</th><th>Confidence</th></tr></thead><tbody id="feedback-table-body"></tbody></table></div></section>
+        </section>
+      </section>
+
+      <section class="view-section history-view" id="history-view" hidden aria-labelledby="history-title">
+        <div class="history-header"><div><div class="eyebrow eyebrow-compact">YOUR WORKSPACE</div><h1 id="history-title">Analysis history</h1><p class="section-subtitle">Return to a previous dataset and review its saved insights.</p></div><button class="button button-primary" id="history-new-analysis" type="button">New analysis <span aria-hidden="true">+</span></button></div>
+        <section class="content-card history-card"><div class="card-heading"><div><span class="card-kicker">SAVED DATASETS</span><h3>Recent analyses</h3></div><button class="text-button" id="refresh-history-button" type="button">↻ Refresh</button></div><div id="history-list" class="history-list"><div class="history-empty"><span class="empty-icon">◷</span><strong>No saved analyses yet</strong><p>Your completed analyses will appear here.</p></div></div></section>
+      </section>
+      <footer class="app-footer"><span>Feed Nest <span class="footer-dot">·</span> Feedback intelligence</span><span>Make every customer voice count.</span></footer>
+    </main>
+  </div>
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

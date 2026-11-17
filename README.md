@@ -1,4 +1,5 @@
 <div align="center">
+<img width="1024" height="339" alt="image" src="https://github.com/user-attachments/assets/f4d9717a-8592-45f9-af0b-ed7a2142517d" />
 
 # 🪺 Feed Nest
 
@@ -31,6 +32,8 @@ The platform is built around three core pillars:
 1. **Discover** — Automatically cluster semantically similar reviews into distinct topics using neural embeddings and density-based clustering—no predefined taxonomy required.
 2. **Understand** — Measure multilingual customer sentiment alongside topic distributions to pinpoint where dissatisfaction is concentrated.
 3. **Act** — Surface emerging issues, longitudinal volume trends, and threshold-driven recommendations to guide product and operations teams.
+4. 
+<img width="1363" height="630" alt="image" src="https://github.com/user-attachments/assets/b598f14e-7919-4699-97ba-1a22099d4cac" />
 
 ### Why Feed Nest?
 
